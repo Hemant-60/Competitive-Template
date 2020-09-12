@@ -11,7 +11,7 @@ def inorder(root,vals):
     vals.append(root.val)
     inorder(root.right,vals)
 
-def dfs(root):
+def bfs(root):
     vals=[]
     q=[root]
     while q!=[]:
@@ -24,7 +24,7 @@ def dfs(root):
 
     return vals
 
-def bfs(root):
+def dfs(root):
     vals = []
     stack = [root]
     while stack != []:
